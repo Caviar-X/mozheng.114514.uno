@@ -84,7 +84,9 @@
 
 广告：由陈亮舟牵头的比普通Latex快319倍的$ra^B_tEx$现在正式发售，详情请加QQ：3507898808
 
-本文就是使用$ra^B_tEx$撰写并转换的[源代码](source.rbt)
+本文就是使用$ra^B_tEx$撰写并转换的
+
+[rabtex源代码](source.rbt)
 
 ![](./static/AprFool.jpg)
 
@@ -98,4 +100,6 @@
 
 *来自原作的 PS: 史记结尾写好了。但并没有完结。可以从中间加。*
 
-[github仓库](https://github.com/FA555/Records_of_the_Grand_Historian) 
+[github仓库（现已脱离独立更新）](https://github.com/FA555/Records_of_the_Grand_Historian) 
+
+[脑机接口](random.html)
