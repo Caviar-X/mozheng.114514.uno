@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random</title>
+</head>
+
+<body>
+    <script>
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        var pic = [
+            "./static/IWillReplaceTourist.png",
+            "./static/MyFaceTurnRed.png",
+            "./static/NoMatter.png",
+            "./static/NvGuContest.jpg",
+            "./static/rabbitAndBot.png",
+            "./static/rabbitAndCompliment.png",
+            "./static/rabbitAndRating.png",
+            "./static/rabbitBuyingIceRedTea.png",
+            "./static/rabbitIsCowSon.png",
+            "./static/Speed.png",
+            "./static/ThanksFather.png",
+            "./static/ThisIsInternet.png",
+            "./static/YouNoGaoPan.png",
+            "./static/ZeroUse.png",
+            "./static/AprFool.jpg",
+            "./static/DamnIt.png",
+            "./static/DoMyCalcus.png",
+            "./static/FatGay.png",
+            "./static/favicon.png",
+            "./static/FuckDepends.png",
+            "./static/FuckingSource.png",
+            "./static/GradeEight.jpg",
+            "./static/IHaveAKedIOI.png"
+        ];
+        location.href = pic[getRndInteger(0, pic.length)];
+    </script>
+</body>
+
+</html>

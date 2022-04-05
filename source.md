@@ -66,13 +66,25 @@
 
 ![](./static/NoMatter.png)
 
+在信息共享时代，陈亮舟同学很清楚的认识到要灵活运用互联网上的资源以及同学的互帮互助才可以快速高效高质量的完成任务并在闲暇之余可以完成自己的事情，所以陈亮舟又一次将自己的数学作业放在了互联网中。
+
+![](./static/DoMyCalcus.png)
+
+很快有人发现此题的答案出自八年级上册的练习册
+
+<img src="./static/GradeEight.jpg" style="zoom:30%;" />
+
+当陈亮舟得知此事后第一时间感谢了那位同学
+
+![](./static/ThanksFather.png)
+
 当得知记者将记录下他的言行后，陈亮舟说：“你的贡献很大，我以后写自传还得请你来当二作。”确实，分享清华牛子的言行，想必会对后来者有很大的激励吧。就以陈亮舟的一句名言作为本文的结尾吧：
 
 ![rabbitIsCowSon](./static/rabbitIsCowSon.png)
 
 广告：由陈亮舟牵头的比普通Latex快319倍的$ra^B_tEx$现在正式发售，详情请加QQ：3507898808
 
-本文就是使用$ra^B_tEx$撰写并转换的
+本文就是使用$ra^B_tEx$撰写并转换的[源代码](source.rbt)
 
 ![](./static/AprFool.jpg)
 
