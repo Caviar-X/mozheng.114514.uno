@@ -103,3 +103,5 @@
 [github仓库（现已脱离独立更新）](https://github.com/FA555/Records_of_the_Grand_Historian) 
 
 [脑机接口](random.html)
+
+[耻辱柱](./milestone/index.html)

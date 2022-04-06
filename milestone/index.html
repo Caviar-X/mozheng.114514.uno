@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <script>
+        function GetDay(day) {
+            function doHandleMonth(month) {
+                var m = month;
+                if (month.toString().length == 1) {
+                    m = "0" + month;
+                }
+                return m;
+            };
+            var today = new Date();
+            var targetday_milliseconds = today.getTime() + 1000 * 60 * 60 * 24 * day;
+            today.setTime(targetday_milliseconds); //注意，这行是关键代码
+            var tYear = today.getFullYear();
+            var tMonth = today.getMonth();
+            var tDate = today.getDate();
+            tMonth = doHandleMonth(tMonth + 1);
+            tDate = doHandleMonth(tDate);
+            return tYear + "-" + tMonth + "-" + tDate;
+        }
+        function getDaysBetween(dateString1, dateString2) {
+            var startDate = Date.parse(dateString1);
+            var endDate = Date.parse(dateString2);
+            if (startDate > endDate) {
+                return 0;
+            }
+            if (startDate == endDate) {
+                return 1;
+            }
+            var days = (endDate - startDate) / (1 * 24 * 60 * 60 * 1000);
+            return days;
+        }
+        function getd(t) {
+            return getDaysBetween(t, GetDay(0));
+        }
+        var dates = [
+            "2022-4-5",
+            "2022-4-3",
+            "2022-3-23",
+            "2022-3-21",
+            "2022-3-9",
+            "2022-3-3",
+            "2022-2-19"
+        ];
+    </script>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">粉兔耻辱柱</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="https://mozheng.114514.uno">回到本纪</a></li>
+                <li><a href="https://mozheng.114514.uno/random">脑机接口</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h5 class="center-align" style="color: red;">缅怀先辈,警钟长鸣</h5>
+        <p>2022年4月5日,小粉兔被八年级数学题难倒后耻辱下播。</p>
+        <p id="1"></p>
+        <p>2022年4月3日,国家集训队选手小粉兔被硬核会员考试难住</p>
+        <p id="2"></p>
+        <p>2022年3月23日,小粉兔疑似被鸟屎袭击</p>
+        <p id="3"></p>
+        <p>2022年3月21日,小粉兔长时间直播cf后发现无人打赏且cf rating增加了-154分,拼贴诗在这一时期达到顶峰</p>
+        <p id="4"></p>
+        <p>2022年3月9日,小粉兔发布著名论文《重修弯曲时空下的电磁场》</p>
+        <p id="5"></p>
+        <p>2022 年 3 月 3 日 23:40,小粉兔抽代作业做错,被弹幕指出后苦想5分钟。</p>
+        <p>2022 年 3 月 3 日晚 11 点 56 分,小粉兔在写抽代作业时查阅了十余分钟资料后得出了结论：操。遂耻辱下播。</p>
+        <p id="6"></p>
+        <p>2022年2月19日,小粉兔在直播时公然打开jiangly的直播间并送礼</p>
+        <p id="7"></p>
+    </div>
+    <script>
+        for (let i = 0; i < dates.length; i++) {
+            document.getElementById((i+1).toString()).innerHTML = "距离现在已经过去" + Math.trunc(getd(dates[i])) + "天";
+        }
+    </script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>
