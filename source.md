@@ -1,4 +1,30 @@
+<script src="https://cdn.bootcss.com/limonte-sweetalert2/8.11.8/sweetalert2.min.js"></script>
+<link href="https://cdn.bootcss.com/limonte-sweetalert2/8.11.8/sweetalert2.min.css" rel="stylesheet">
+
+<script>
+function getQueryString(name) {
+    let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    let r = window.location.search.substr(1).match(reg);
+    if (r != null) {
+        return decodeURIComponent(r[2]);
+    };
+    return null;
+}
+if (!(getQueryString("popup") === "false")) {
+Swal.fire(
+"",
+'请加入rabtex用户群,群号3507898808',
+'info'
+)
+}
+</script>
+
+
+
+
 # 清华学生的一天是怎样的？学霸果然和我们不一样
+
+
 
 相信大家很好奇，清华学生的一天是怎样的？今天，小编就来带大家一起看一看。
 
@@ -44,7 +70,7 @@
 
 陈亮舟刚正不阿的品格也值得我们称赞，例如当别人想抄他抽代作业的时候，他严词拒绝了
 
-![](./static/YouNoGaoPan.png)
+<img src="./static/YouNoGaoPan.png" style="zoom:33%;" />
 
 陈亮舟在遇到问题的时候也会虚心求教，有一次他在安装python库的时候遇到了网速很慢的问题，经过他细致的排查发现原来是源搞错了
 
@@ -66,17 +92,17 @@
 
 ![](./static/NoMatter.png)
 
-在信息共享时代，陈亮舟同学很清楚的认识到要灵活运用互联网上的资源以及同学的互帮互助才可以快速高效高质量的完成任务并在闲暇之余可以完成自己的事情，所以陈亮舟又一次将自己的数学作业放在了互联网中。
+如果你要对大学新生说一句话,你会说什么?”当被问到这个问题,陈亮舟苦笑了一声,摇了摇头说道:“好好学微积分。"”作为“保送生”,陈亮舟和他的大部分集训队同学一样,缺席了一部分高中,甚至初中的课。尽管后来有一定的补习,可对于博学的陈亮舟来说，这里仍是他的一块短板。一次直播时，陈亮舟便展示了如何被八年级·数学·上册·精炼卡住
 
-![](./static/DoMyCalcus.png)
+<img src="./static/GradeEight.jpg" style="zoom:25%;" />
 
-很快有人发现此题的答案出自八年级上册的练习册
+是啊,人非圣贤,岂能无所不知。事实上,陈亮舟对自己的短板也从不避讳。
 
-<img src="./static/GradeEight.jpg" style="zoom:30%;" />
+<img src="./static/ThisNo.png" style="zoom:33%;" />
 
-当陈亮舟得知此事后第一时间感谢了那位同学
+说到微积分,他有自己的“独门秘诀”,那就是不证一致收敛性。因此,他的作业效率很高,作业经常完成。可他提醒他的同学:“期中考不证一致收敛性是要扣分的。"这是严于律己,宽于律人的陈亮舟。
 
-![](./static/ThanksFather.png)
+
 
 当得知记者将记录下他的言行后，陈亮舟说：“你的贡献很大，我以后写自传还得请你来当二作。”确实，分享清华牛子的言行，想必会对后来者有很大的激励吧。就以陈亮舟的一句名言作为本文的结尾吧：
 
