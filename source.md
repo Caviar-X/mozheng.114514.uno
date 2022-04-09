@@ -13,7 +13,7 @@ function getQueryString(name) {
 if (!(getQueryString("popup") === "false")) {
 Swal.fire(
 "",
-'请加入rabtex用户群,群号3507898808',
+'请加入rabtex用户群,群号927978837',
 'info'
 )
 }
