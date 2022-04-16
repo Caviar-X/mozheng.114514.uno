@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">粉兔拼贴诗</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="https://mozheng.114514.uno/index.html?popup=false">回到本纪</a></li>
+                <li><a href="https://mozheng.114514.uno/random">脑机接口</a></li>
+                <li><a href="https://mozheng.114514.uno/milestone">耻辱柱</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="1"></div>
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javasctipt" src="js/gen.js"></script>
+    <script>
+        function gen(div, img, name, desc,time,author) {
+            document.getElementById(div).innerHTML +=
+            `
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="${img}">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">${name}<i class="material-icons right">more_vert</i></span>
+                    <p><i class="material-icons">av_timer</i>时间: ${time}<i class="material-icons">person_pin</i> 作者: ${author} <br> <a href="${img}">原图片</a> </p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">${name}<i class="material-icons right">close</i></span>
+                    <p>${desc}</p>
+                </div>
+            </div>
+            `
+        }
+        gen("1","poems/saying.png","神谕","小粉兔对拼贴诗的看法","2022-4-16","小粉兔");
+    </script>
+</body>
+
+</html>
