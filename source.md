@@ -131,3 +131,5 @@ Swal.fire(
 [脑机接口](random.html)
 
 [耻辱柱](./milestone/index.html)
+
+[拼贴诗](./poems/index.html)
