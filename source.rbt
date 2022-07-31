@@ -1,24 +1,19 @@
-/*
-2022.4.1 by PinkRabbit
+/**
+* @author: PinkRabbit
+* @date: 2022-??-??
+* @description: in order to render the html
 */
-Import rabtex::prelude::*;
-Import rabtex::conv::{convrab,convpath};
-//render
-unstable fn output_suffix suf --option {
-    include! "crates.mozheng.114514.uno/suffix/index.rbt" :: output :: suffix
-    suffix suf --option
-}
-Render Begin
-$mode 0x01
-$policy Disable
-unsafe! {$convrab "./source.md"} //covert files into rabtex
-unsafe! {$utitle "\u{粉兔本纪}"}
-unstable! {$output_suffix HTML --(pretty? => ugly) }  //ugly mode.The "pretty" option is not stable now
-Render End
 
-Prepare Begin
-$(if $list_path |> $for_each {|x| if !$relative_path(x) then $pipe.send(x)}) |> $convpath relative
-Prepare End
+\prelude document "./source.md"
+\prelude output "git://index.html"
+use rabtex::*;
+use package::typora::render::*;
+fn render() -> RenderOptions {
+    RenderOptions::default().binary(PANDOC::find()?,PandocOptions::TyporaLike).with_style(SOURCE::Whitey::default())?
+}
+fn main() -> RabDispatch<()> {
+    document::modify().with_options(render())?
+}
 
 
 
