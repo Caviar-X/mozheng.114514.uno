@@ -13,7 +13,7 @@ function getQueryString(name) {
 if (!(getQueryString("popup") === "false")) {
 Swal.fire(
 "",
-'请加入rabtex用户群,群号927978837',
+'请加入rabtex用户群,群号423598212',
 'info'
 )
 }
@@ -101,6 +101,18 @@ Swal.fire(
 <img src="./static/ThisNo.png" style="zoom:33%;" />
 
 说到微积分,他有自己的“独门秘诀”,那就是不证一致收敛性。因此,他的作业效率很高,作业经常完成。可他提醒他的同学:“期中考不证一致收敛性是要扣分的。"这是严于律己,宽于律人的陈亮舟。
+
+陈亮舟对权力与统治十分了解，这是他茶余饭后的第一兴趣爱好。
+
+![seizePower](./static/seizePower.png)
+
+![increase](./static/increase.png)
+
+陈亮舟虽然现在已经是清华的牛子，可是他对自己的现状仍不满意，希望进一步提升自己的能力：
+
+![LuoguRunAway](./static/LuoguRunAway.png)
+
+陈亮舟还对当代年轻人的发展十分关心。有一次，在小粉兔的建议与引领下，大家在洛谷社区中的发言更加具有针对性了。
 
 
 
