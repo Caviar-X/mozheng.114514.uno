@@ -134,7 +134,7 @@ Swal.fire(
 
 充分展现了陈亮舟对自己产品的自信和把握
 
-[下载地址及使用方式](https://www.bilibili.com/video/BV1GJ411x7h7)
+[下载地址及使用方式](https://tx0.org/15t)
 
 *来自原作的 PS: 史记结尾写好了。但并没有完结。可以从中间加。*
 
