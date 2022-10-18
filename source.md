@@ -144,4 +144,3 @@ Swal.fire(
 
 [耻辱柱](./milestone/index.html)
 
-[拼贴诗](./poems/index.html)
